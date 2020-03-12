@@ -2,23 +2,23 @@ package com.data.model;
 
 import java.util.Objects;
 
-public class User {
+public class Users {
     private int id;
     private String name;
     private String login;
     private String password;
 
-    public User() {
+    public Users() {
     }
 
-    public User(int id, String name, String login, String password) {
+    public Users(int id, String name, String login, String password) {
         this.id = id;
         this.name = name;
         this.login = login;
         this.password = password;
     }
 
-    public User(String name, String login, String password) {
+    public Users(String name, String login, String password) {
         this.name = name;
         this.login = login;
         this.password = password;
@@ -60,9 +60,9 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                Objects.equals(password, user.password);
+        Users users = (Users) o;
+        return id == users.id &&
+                Objects.equals(password, users.password);
     }
 
     @Override
